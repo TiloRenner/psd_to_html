@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   margin: 0;
 }
@@ -65,26 +64,17 @@ body {
   background: #e0dff9;
   box-sizing: border-box;
 }
+
+
+
 .meet_team{
     display:grid;
-<<<<<<< HEAD
-  
-}
-=======
-=======
-.meet_team{
-    display:grid;
->>>>>>> 99471fbaae424afb8f60711d9e1f2e3ddcb2b050
     grid-template-rows: 100px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-flow:column;
     justify-items:center;
     align-items: center;
-
-
-
 }
-
 @media only screen and (max-width:800px) and (orientation:portrait){
     .meet_team{
         display:grid;
@@ -95,9 +85,4 @@ body {
     
     
     }
-<<<<<<< HEAD
-}
->>>>>>> 99471fb (added grid and @media)
-=======
-}
->>>>>>> 99471fbaae424afb8f60711d9e1f2e3ddcb2b050
+  }
