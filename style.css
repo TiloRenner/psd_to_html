@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
 }
@@ -70,6 +71,10 @@ body {
   
 }
 =======
+=======
+.meet_team{
+    display:grid;
+>>>>>>> 99471fbaae424afb8f60711d9e1f2e3ddcb2b050
     grid-template-rows: 100px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-flow:column;
@@ -90,5 +95,9 @@ body {
     
     
     }
+<<<<<<< HEAD
 }
 >>>>>>> 99471fb (added grid and @media)
+=======
+}
+>>>>>>> 99471fbaae424afb8f60711d9e1f2e3ddcb2b050
