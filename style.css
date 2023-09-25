@@ -115,15 +115,16 @@ body {
 }
 
 .teambottom > div {
-  width:50px;
+  width:70px;
   align-self: center;
   text-align: center;
   justify-self: center;
-  border: solid turquoise 2px;
+  border: solid turquoise 1px;
+  color:turquoise;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.6em;
-  padding: 8px;
+  padding: 7px;
 }
 
 .contact_and_clients {
