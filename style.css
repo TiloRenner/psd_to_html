@@ -128,11 +128,7 @@ body {
   padding: 7px;
 }
 
-.contact_and_clients {
-  height: 50vh;
-  background: #e0dff9;
-  box-sizing: border-box;
-}
+
 
 .team_member{
   text-decoration: none;
@@ -172,15 +168,33 @@ body {
   margin-bottom: 6%;
 }
 
+.contact_and_clients {
+  display:flex;
+  justify-content: center;
+  height: 50vh;
+  background: #e0dff9;
+  box-sizing: border-box;
+}
+
+.contact_area{
+  display:flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+}
+
+.contactform{
+  color:#2e2e52;
+}
 
 .clients_area{
   display:grid;
   grid-template-rows: 30vh 30vh;
   /*grid-auto-rows: minmax(1000px, auto);*/
   grid-template-columns: 150px 150px 150px 150px;
-
-
 }
+
 .client{
   width:100px;
   height: 100px;
