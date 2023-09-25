@@ -64,3 +64,148 @@ body {
   background: #e0dff9;
   box-sizing: border-box;
 }
+
+
+
+.meet_team{
+    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+    background-position: center center; /* Das Bild wird zentriert positioniert */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 50vh;
+    width: 100vw;
+    color: #e0dff9;
+
+}
+
+.teamtop{
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+
+.teamcontent{
+  width: 100px;
+  align-self: center;
+  display:grid;
+  grid-template-rows: 30vh;
+  /*grid-auto-rows: minmax(1000px, auto);*/
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-auto-flow:column;
+  justify-items: center;
+  justify-content: center;
+  align-content: end;
+  align-items:center;
+  padding-left: 0;
+  margin:0;
+  list-style-type: none;
+
+}
+
+.teambottom{
+  display:flex;
+  align-self: center;
+  flex-direction: column;
+}
+.teambottom > p{
+  font-size: 0.8em;
+}
+
+.teambottom > div {
+  width:70px;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  border: solid turquoise 1px;
+  color:turquoise;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.6em;
+  padding: 7px;
+}
+
+.contact_and_clients {
+  height: 50vh;
+  background: #e0dff9;
+  box-sizing: border-box;
+}
+
+.team_member{
+  text-decoration: none;
+  text-transform: uppercase;
+  border:solid white 1px;
+  
+  
+  width:140px;
+}
+
+.team_member > div{
+  text-decoration: none;
+  text-transform: uppercase;
+  /*border:solid white 2px;*/
+  background-color: white;
+  width:140px;
+  height: 140px;
+ 
+}
+
+.team_member > div + p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 0.6em;
+  text-align: center;
+  margin: 2%;
+  margin-top: 6%;
+
+}
+
+.team_member > div + p + p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.6em;
+  text-align: center;
+  margin: 2%;
+  margin-bottom: 6%;
+}
+
+
+.clients_area{
+  display:grid;
+  grid-template-rows: 30vh 30vh;
+  /*grid-auto-rows: minmax(1000px, auto);*/
+  grid-template-columns: 150px 150px 150px 150px;
+
+
+}
+.client{
+  width:100px;
+  height: 100px;
+  background-color: white;
+}
+
+
+@media only screen and (max-width:800px) and (orientation:portrait){
+    .meet_team{
+        background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+        background-size: cover; 
+        display:flex;
+        color: #ffffff;
+        height:300px;
+    
+    
+    }
+
+    .teamcontent{
+      display:grid;
+      grid-template-rows: 10vw 10vw;
+      grid-template-columns: 50vw 50vw;
+      grid-auto-flow:column;
+      height:300px;
+    
+    }
+
+  }
