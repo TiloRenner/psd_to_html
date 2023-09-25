@@ -89,11 +89,12 @@ body {
 }
 
 .teamcontent{
+  width: 100px;
   align-self: center;
   display:grid;
   grid-template-rows: 30vh;
   /*grid-auto-rows: minmax(1000px, auto);*/
-  grid-template-columns: 18vw 18vw 18vw 18vw;
+  grid-template-columns: 150px 150px 150px 150px;
   grid-auto-flow:column;
   justify-items: center;
   justify-content: center;
@@ -139,7 +140,7 @@ body {
   border:solid white 1px;
   
   
-  width:130px;
+  width:140px;
 }
 
 .team_member > div{
@@ -147,23 +148,43 @@ body {
   text-transform: uppercase;
   /*border:solid white 2px;*/
   background-color: white;
-  width:130px;
-  height: 130px;
+  width:140px;
+  height: 140px;
  
 }
 
 .team_member > div + p{
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-align: center;
+  margin: 2%;
+  margin-top: 6%;
+
 }
 
 .team_member > div + p + p{
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-align: center;
+  margin: 2%;
+  margin-bottom: 6%;
+}
+
+
+.clients_area{
+  display:grid;
+  grid-template-rows: 30vh 30vh;
+  /*grid-auto-rows: minmax(1000px, auto);*/
+  grid-template-columns: 150px 150px 150px 150px;
+
+
+}
+.client{
+  width:100px;
+  height: 100px;
+  background-color: white;
 }
 
 
