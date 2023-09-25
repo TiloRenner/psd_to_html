@@ -68,21 +68,122 @@ body {
 
 
 .meet_team{
-    display:grid;
-    grid-template-rows: 100px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-flow:column;
-    justify-items:center;
-    align-items: center;
+    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+    background-position: center center; /* Das Bild wird zentriert positioniert */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 50vh;
+    width: 100vw;
+    color: #e0dff9;
+
 }
+
+.teamtop{
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+
+.teamcontent{
+  align-self: center;
+  display:grid;
+  grid-template-rows: 30vh;
+  /*grid-auto-rows: minmax(1000px, auto);*/
+  grid-template-columns: 18vw 18vw 18vw 18vw;
+  grid-auto-flow:column;
+  justify-items: center;
+  justify-content: center;
+  align-content: end;
+  align-items:center;
+  padding-left: 0;
+  margin:0;
+  list-style-type: none;
+
+}
+
+.teambottom{
+  display:flex;
+  align-self: center;
+  flex-direction: column;
+}
+.teambottom > p{
+  font-size: 0.8em;
+}
+
+.teambottom > div {
+  width:50px;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  border: solid turquoise 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.6em;
+  padding: 8px;
+}
+
+.contact_and_clients {
+  height: 50vh;
+  background: #e0dff9;
+  box-sizing: border-box;
+}
+
+.team_member{
+  text-decoration: none;
+  text-transform: uppercase;
+  border:solid white 1px;
+  
+  
+  width:130px;
+}
+
+.team_member > div{
+  text-decoration: none;
+  text-transform: uppercase;
+  /*border:solid white 2px;*/
+  background-color: white;
+  width:130px;
+  height: 130px;
+ 
+}
+
+.team_member > div + p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.team_member > div + p + p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+
 @media only screen and (max-width:800px) and (orientation:portrait){
     .meet_team{
-        display:grid;
-        grid-template-rows: 100px 100px;
-        grid-template-columns: 50% 50%;
-        grid-auto-flow:column;
-    
+        background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+        background-size: cover; 
+        display:flex;
+        color: #ffffff;
+        height:300px;
     
     
     }
+
+    .teamcontent{
+      display:grid;
+      grid-template-rows: 10vw 10vw;
+      grid-template-columns: 50vw 50vw;
+      grid-auto-flow:column;
+      height:300px;
+    
+    }
+
   }
