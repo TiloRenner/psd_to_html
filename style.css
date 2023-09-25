@@ -51,7 +51,11 @@ body {
   color: #00e0d0;
 }
 .hero-section {
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
   width: 100vw;
   box-sizing: border-box;
   background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
@@ -60,7 +64,105 @@ body {
   background-position: center center; /* Das Bild wird zentriert positioniert */
 }
 .expertise {
-  height: 50vh;
-  background: #e0dff9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  background: #ffffff;
   box-sizing: border-box;
+}
+.h2_expertise {
+  padding-top: 2em;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.p_expertise {
+  color: #515151;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+.h3_expertise {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.article_paragraph {
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+.expertise_article {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.expertise_article > img {
+  width: 4em;
+  height: 4em;
+}
+.expertise_article_container {
+  max-width: 75em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 2em;
+}
+.horizontal_line {
+  border-top: 1px solid #767676; /* Höhe und Farbe der Trennlinie */
+  width: 4%; /* Breite der Trennlinie (entsprechend dem Container) */
+  padding-bottom: 2em;
+}
+.horizontal_line_section1 {
+  border-top: 1px solid #00e0d0; /* Höhe und Farbe der Trennlinie */
+  width: 4%; /* Breite der Trennlinie (entsprechend dem Container) */
+  padding-bottom: 1em;
+}
+.hero_section_button {
+  width: 10em;
+  background: transparent;
+  border: 2px solid #00e0d0;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.5s;
+}
+.hero_section_button_text {
+  color: #00e0d0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.hero-section_h1 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.hero-section_p {
+  max-width: 30em;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 1em;
 }
