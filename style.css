@@ -64,7 +64,7 @@ body {
   background-position: center center; /* Das Bild wird zentriert positioniert */
 }
 /*story section */
-.story-container{
+.story-container {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -72,19 +72,19 @@ body {
   position: relative;
   width: 940px;
 }
-.story-logo-image{
+.story-logo-image {
   width: 235px;
   height: 229px;
 }
 
-.story-h2{
+.story-h2 {
   color: #413d4b;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.375rem;
   font-weight: bold;
   margin: 0;
 }
-.story-p{
+.story-p {
   margin: 20px 0 0;
   width: 540px;
   opacity: 0.75;
@@ -93,7 +93,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 22px;
 }
-.story_button{
+.story_button {
   margin: 27px 0 0;
   min-height: 40px;
   padding: 0 13px;
@@ -104,9 +104,9 @@ body {
   border-radius: 2px;
   background-color: transparent;
 }
-.story_button_text{
+.story_button_text {
   color: #00e0d0;
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: 40px;
@@ -114,7 +114,7 @@ body {
 }
 
 /*watch-section*/
-.watch{
+.watch {
   margin: 0px auto 0;
   position: relative;
   width: 100%;
@@ -122,17 +122,22 @@ body {
   background-position: center top;
   background-size: cover;
 }
-.watch-hintergrund-überlagerung{
+.watch-hintergrund-überlagerung {
   padding: 202px 0 199px;
   position: relative;
   width: 100%;
-  background: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0, rgba(49, 29, 94, 0.85) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 5, 47, 0.85) 0,
+    rgba(49, 29, 94, 0.85) 100%
+  );
 }
-.watch-video, .watch-h2{
+.watch-video,
+.watch-h2 {
   display: flex;
   justify-content: center;
 }
-.watch-h2-font{
+.watch-h2-font {
   font-family: "Roboto";
   color: white;
   margin: 33px 0 0;
@@ -147,6 +152,7 @@ body {
   height: 85vh;
   background: #ffffff;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .h2_expertise {
@@ -245,64 +251,59 @@ body {
   padding-bottom: 1em;
 }
 
-
-
-
-.meet_team{
-    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
-    background-position: center center; /* Das Bild wird zentriert positioniert */
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    height: 50vh;
-    width: 100vw;
-    color: #e0dff9;
-
+.meet_team {
+  background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+  background-position: center center; /* Das Bild wird zentriert positioniert */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  height: 50vh;
+  width: 100vw;
+  color: #e0dff9;
 }
 
-.teamtop{
+.teamtop {
   justify-items: center;
   align-items: center;
   align-self: center;
 }
 
-.teamcontent{
+.teamcontent {
   width: 100px;
   align-self: center;
-  display:grid;
+  display: grid;
   grid-template-rows: 30vh;
   /*grid-auto-rows: minmax(1000px, auto);*/
   grid-template-columns: 150px 150px 150px 150px;
-  grid-auto-flow:column;
+  grid-auto-flow: column;
   justify-items: center;
   justify-content: center;
   align-content: end;
-  align-items:center;
+  align-items: center;
   padding-left: 0;
-  margin:0;
+  margin: 0;
   list-style-type: none;
-
 }
 
-.teambottom{
-  display:flex;
+.teambottom {
+  display: flex;
   align-self: center;
   flex-direction: column;
 }
-.teambottom > p{
+.teambottom > p {
   font-size: 0.8em;
 }
 
 .teambottom > div {
-  width:70px;
+  width: 70px;
   align-self: center;
   text-align: center;
   justify-self: center;
   border: solid turquoise 1px;
-  color:turquoise;
+  color: turquoise;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.6em;
@@ -315,36 +316,33 @@ body {
   box-sizing: border-box;
 }
 
-.team_member{
+.team_member {
   text-decoration: none;
   text-transform: uppercase;
-  border:solid white 1px;
-  
-  
-  width:140px;
+  border: solid white 1px;
+
+  width: 140px;
 }
 
-.team_member > div{
+.team_member > div {
   text-decoration: none;
   text-transform: uppercase;
   /*border:solid white 2px;*/
   background-color: white;
-  width:140px;
+  width: 140px;
   height: 140px;
- 
 }
 
-.team_member > div + p{
+.team_member > div + p {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 0.6em;
   text-align: center;
   margin: 2%;
   margin-top: 6%;
-
 }
 
-.team_member > div + p + p{
+.team_member > div + p + p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 0.6em;
@@ -353,99 +351,96 @@ body {
   margin-bottom: 6%;
 }
 
-
-.clients_area{
-  display:grid;
+.clients_area {
+  display: grid;
   grid-template-rows: 30vh 30vh;
   /*grid-auto-rows: minmax(1000px, auto);*/
   grid-template-columns: 150px 150px 150px 150px;
-
-
 }
-.client{
-  width:100px;
+.client {
+  width: 100px;
   height: 100px;
   background-color: white;
 }
 
-
-@media only screen and (max-width:800px) and (orientation:portrait){
-    .meet_team{
-        background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
-        background-size: cover; 
-        display:flex;
-        color: #ffffff;
-        height:300px;
-    
-    
-    }
-
-    .teamcontent{
-      display:grid;
-      grid-template-rows: 10vw 10vw;
-      grid-template-columns: 50vw 50vw;
-      grid-auto-flow:column;
-      height:300px;
-    
-    }
-
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .meet_team {
+    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+    background-size: cover;
+    display: flex;
+    color: #ffffff;
+    height: 300px;
   }
 
+  .teamcontent {
+    display: grid;
+    grid-template-rows: 10vw 10vw;
+    grid-template-columns: 50vw 50vw;
+    grid-auto-flow: column;
+    height: 300px;
+  }
+}
+
 /* Footer*/
-.footer{
+.footer {
   position: relative;
   height: 70vh;
   width: 100%;
   background-position: center top;
-  background: linear-gradient(90deg, rgba(9, 5, 47, 0.85) 0, rgba(49, 29, 94, 0.95) 100%), url("images/footer_laptop.png") no-repeat center 0;
+  background: linear-gradient(
+      90deg,
+      rgba(9, 5, 47, 0.85) 0,
+      rgba(49, 29, 94, 0.95) 100%
+    ),
+    url("images/footer_laptop.png") no-repeat center 0;
   background-size: cover;
 }
-.footer-container{
+.footer-container {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   padding-top: 40px;
   position: relative;
   width: 940px;
-  color:#e0dff9;
+  color: #e0dff9;
   font-family: Roboto, sans-serif;
   font-size: 0.875rem;
   justify-content: space-between;
 }
-.footer-item1{
+.footer-item1 {
   float: left;
   position: relative;
   width: 299px;
 }
-.footer-logo{
-  width:44px;
+.footer-logo {
+  width: 44px;
   height: 50px;
   float: left;
   margin: 0 11px 0 0;
 }
-.footer-schriftzug{
+.footer-schriftzug {
   width: 73px;
   height: 29px;
   float: left;
   margin: 5px 5px 5px 5px;
 }
-.footer-text{
+.footer-text {
   margin: 20px 0 0;
   position: relative;
   font-weight: 300;
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-.footer-item2{
+.footer-item2 {
   float: left;
   position: relative;
   width: 301px;
 }
-.adress{
+.adress {
   float: left;
   margin: 4px 15px 0 0;
 }
-.adress-text{
+.adress-text {
   margin: 0 0 0;
   float: left;
   width: 271px;
@@ -453,20 +448,20 @@ body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-.phone{
+.phone {
   margin: 125px 0px 0px 1px;
   position: relative;
 }
-.phone-img{
+.phone-img {
   float: left;
   margin: 0px 12px 0px 0px;
 }
-.footer-item3{
+.footer-item3 {
   float: left;
   position: relative;
   width: 292px;
 }
-.footer-form{
+.footer-form {
   float: left;
   min-height: 45px;
   position: relative;
@@ -483,8 +478,8 @@ body {
   opacity: 0.75;
   font-weight: 300;
   text-align: center;
-} 
-.footer-btn{
+}
+.footer-btn {
   width: 70px;
   height: 45px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -492,40 +487,40 @@ body {
   cursor: pointer;
 }
 
-.footer-btn:hover{
+.footer-btn:hover {
   background: rgba(255, 255, 255, 1);
 }
 
-.footer-social-media{
+.footer-social-media {
   margin: 27px 1px 0;
   display: flex;
   justify-content: space-between;
   width: 220px;
 }
-.footer-social-media-item{
+.footer-social-media-item {
   position: relative;
   width: 1px;
 }
-.footer-social-medi-logo{
+.footer-social-medi-logo {
   width: 30px;
 }
-.footer-bottom{
+.footer-bottom {
   float: left;
   display: flex;
   justify-content: flex-start;
-  padding: 0 69px 0  69px;
+  padding: 0 69px 0 69px;
   position: relative;
   width: 938px;
   height: 16px;
-  color:#e0dff9;
+  color: #e0dff9;
 }
-.footer-nav{
+.footer-nav {
   float: left;
   position: relative;
   width: 301px;
   height: 14px;
 }
-.footer-nav-list{
+.footer-nav-list {
   display: flex;
   position: relative;
   list-style: none;
@@ -535,19 +530,19 @@ body {
   width: auto;
   margin: 0 28.5px 0 0;
 }
-.footer-nav-list li a{
-  color:#e0dff9;
+.footer-nav-list li a {
+  color: #e0dff9;
 }
 .footer-nav-list li:last-child {
   margin-right: 0;
 }
-.footer-nav-item{
+.footer-nav-item {
   letter-spacing: 0.025em;
 }
 .footer-bottom-right {
   float: right;
   width: 459px;
   letter-spacing: 0.025em;
-  color:#e0dff9;
+  color: #e0dff9;
   text-align: right;
 }
