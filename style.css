@@ -356,35 +356,86 @@ body {
 .contact_and_clients {
   display:flex;
   justify-content: center;
-  height: 50vh;
+  
   background: #ffffff;
-  box-sizing: border-box;
+  
+}
+.contact_and_clients h2 {
+  font-size: 1.1em;
+  text-transform:uppercase;
+  margin:10px;
+  margin-top: 50px;
 }
 
 .contact_area{
+  width:50vh;
   display:flex;
   flex-direction: column;
-
-  box-sizing: border-box;
-
+  
+  margin: 10px;
 }
 
 .contactform{
   color:#2e2e52;
+
+}
+
+
+
+.contactform input,textarea{
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 10px 15px;
+  
+  font-size: 0.6em;
+  color: #00000080;
+  margin:8px;
+  resize:none;
+}
+.contactform textarea{
+  height:50%;
+}
+
+.contactform .cyan_button{
+  
+  border: solid turquoise 1px;
+  color:turquoise;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.6em;
+  padding: 7px;
+  text-transform: uppercase;
+  width:80px
 }
 
 .clients_area{
+  margin: 10px;
+ 
+}
+
+.clients_content{
+  
   display:grid;
-  grid-template-rows: 30vh 30vh;
+  grid-template-columns: 50% 50%;
   /*grid-auto-rows: minmax(1000px, auto);*/
-  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  gap: 10px;
+  
+ 
 }
 
 .client{
   width:100px;
-  height: 100px;
-  background-color: white;
+  height: 15px;
+  background-color: green;
+  margin: 15px;
 }
+
+.client img{
+  height:15px;
+}
+
+
 
 
 @media only screen and (max-width:800px) and (orientation:portrait){
