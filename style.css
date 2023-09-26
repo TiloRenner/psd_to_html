@@ -249,17 +249,21 @@ body {
 
 
 .meet_team{
-    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+    background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
     background-position: center center; /* Das Bild wird zentriert positioniert */
+    background-size: cover; /* Das Bild wird so skaliert, dass es die gesamte Höhe der Section abdeckt */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    /*margin-top: 100px;*/
     height: 50vh;
     width: 100vw;
-    color: #e0dff9;
+    color: #ffffff;
+    
 
 }
 
@@ -353,7 +357,7 @@ body {
   display:flex;
   justify-content: center;
   height: 50vh;
-  background: #e0dff9;
+  background: #ffffff;
   box-sizing: border-box;
 }
 
@@ -385,11 +389,11 @@ body {
 
 @media only screen and (max-width:800px) and (orientation:portrait){
     .meet_team{
-        background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
+        background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
         background-size: cover; 
         display:flex;
         color: #ffffff;
-        height:300px;
+        height:600px;
     
     
     }
@@ -399,7 +403,7 @@ body {
       grid-template-rows: 10vw 10vw;
       grid-template-columns: 50vw 50vw;
       grid-auto-flow:column;
-      height:300px;
+      height:600px;
     
     }
 
