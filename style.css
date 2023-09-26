@@ -63,6 +63,83 @@ body {
   background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
   background-position: center center; /* Das Bild wird zentriert positioniert */
 }
+/*story section */
+.story-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 45px 65px 45px 45px;
+  position: relative;
+  width: 940px;
+}
+.story-logo-image{
+  width: 235px;
+  height: 229px;
+}
+
+.story-h2{
+  color: #413d4b;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin: 0;
+}
+.story-p{
+  margin: 20px 0 0;
+  width: 540px;
+  opacity: 0.75;
+  color: #413d4b;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 22px;
+}
+.story_button{
+  margin: 27px 0 0;
+  min-height: 40px;
+  padding: 0 13px;
+  position: relative;
+  width: 120px;
+  border: 1px solid #00e0d0;
+  border-radius: 2px;
+  border-radius: 2px;
+  background-color: transparent;
+}
+.story_button_text{
+  color: #00e0d0;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*watch-section*/
+.watch{
+  margin: 0px auto 0;
+  position: relative;
+  width: 100%;
+  background: url(images/put_your_image_here_7.png) no-repeat center 0;
+  background-position: center top;
+  background-size: cover;
+}
+.watch-hintergrund-überlagerung{
+  padding: 202px 0 199px;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0, rgba(49, 29, 94, 0.85) 100%);
+}
+.watch-video, .watch-h2{
+  display: flex;
+  justify-content: center;
+}
+.watch-h2-font{
+  font-family: "Roboto";
+  color: white;
+  margin: 33px 0 0;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+}
 .expertise {
   display: flex;
   align-items: center;
@@ -441,33 +518,17 @@ body {
   width: 938px;
   height: 16px;
   color:#e0dff9;
-/*  display: flex;
-  position: relative;
-  margin: 0 auto;
-  width: 940px;
-  color:#e0dff9;*/
 }
 .footer-nav{
   float: left;
   position: relative;
   width: 301px;
   height: 14px;
-
-/*  display: flex;
-  float: left;
-  text-align: left;
-  position: relative;
-  width: 940px;
-  color:#e0dff9;
-  justify-content: flex-start;*/
 }
 .footer-nav-list{
   display: flex;
   position: relative;
   list-style: none;
- /* display: flex;
-  float: left;
-  list-style: none;*/
 }
 .footer-nav-list li {
   float: left;
