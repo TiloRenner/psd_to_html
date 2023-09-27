@@ -8,7 +8,6 @@ body {
   align-items: center;
   height: 8vh;
   width: 100vw;
-  background: #2e2e52;
   box-sizing: border-box;
 }
 .header_nav_elements {
@@ -55,7 +54,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 65vh;
+  padding: 100px;
   width: 100vw;
   box-sizing: border-box;
   background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
@@ -149,10 +148,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
+  /* height: 85vh; */
   background: #ffffff;
   box-sizing: border-box;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .h2_expertise {
