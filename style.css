@@ -457,50 +457,57 @@ body {
 
 
 
-@media only screen and (max-width:800px) and (orientation:portrait){
+@media only screen and (max-width:768px){
+
+
+  .meet_team{
+      background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
+      background-size: cover; 
+      display:flex;
+      color: #ffffff;
+      
+  
+  
+  }
+
+  .teamcontent{
+    display:grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 150px 150px;
+    grid-auto-flow:row;
+    
+    margin-top:0px;
+  
+  }
+
+  .contact_and_clients {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .contact_and_clients h2{
+    align-self: center;
+    text-align: center;
+  }
+
+  .clients_area{
+    margin: 10px; 
+    padding-bottom: 70px;
+  }
+
+  .contactform input,textarea{
+    align-self: center;
+  }
 
   .contactform .cyan_button{
-  
     align-self: center;
-    justify-self: center;
   }
-    .meet_team{
-        background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
-        background-size: cover; 
-        display:flex;
-        color: #ffffff;
-        
-    
-    
-    }
-
-    .teamcontent{
-      display:grid;
-      grid-template-rows: 200px 200px;
-      grid-template-columns: 150px 150px;
-      grid-auto-flow:row;
-      
-      margin-top:0px;
-    
-    }
-
-    .contact_and_clients {
-      
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-    }
-
-    .clients_area{
-      margin: 10px; 
-      padding-bottom: 70px;
-    }
 
 
-
-
-  }
+}
 
 
 
