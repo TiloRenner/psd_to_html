@@ -250,28 +250,49 @@ body {
   padding-bottom: 1em;
 }
 
-.meet_team {
-  background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
-  background-position: center center; /* Das Bild wird zentriert positioniert */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  height: 50vh;
-  width: 100vw;
-  color: #e0dff9;
+
+
+
+.meet_team{
+    background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
+    background-position: center center; /* Das Bild wird zentriert positioniert */
+    background-size: cover; /* Das Bild wird so skaliert, dass es die gesamte Höhe der Section abdeckt */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /*margin-top: 100px;*/
+    /*height: 50vh;*/
+    /*width: 100vw;*/
+    color: #ffffff;
+    
+
 }
 
-.teamtop {
+.teamtop{
+  display:flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
-  align-self: center;
 }
 
-.teamcontent {
-  width: 100px;
+.teamtop h2{
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.teamtop p{
+  margin: 5px;
+  font-size: 0.7em;
+  font-weight:300;
+}
+
+.teamcontent{
+  /*width: 100px;*/
   align-self: center;
   display: grid;
   grid-template-rows: 30vh;
@@ -309,11 +330,7 @@ body {
   padding: 7px;
 }
 
-.contact_and_clients {
-  height: 50vh;
-  background: #e0dff9;
-  box-sizing: border-box;
-}
+
 
 .team_member {
   text-decoration: none;
@@ -350,35 +367,143 @@ body {
   margin-bottom: 6%;
 }
 
-.clients_area {
-  display: grid;
-  grid-template-rows: 30vh 30vh;
+.contact_and_clients {
+  
+  display:flex;
+  justify-content: center;
+  
+  background: #ffffff;
+  
+}
+.contact_and_clients h2 {
+  font-size: 1.1em;
+  text-transform:uppercase;
+  margin:10px;
+  margin-top: 50px;
+}
+
+.contact_area{
+  width:50vh;
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.contactform{
+  display: flex;
+  flex-direction: column;
+  color:#2e2e52;
+  height:360px;
+}
+
+
+
+.contactform input,textarea{
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 10px 15px;
+  
+  font-size: 0.6em;
+  color: #00000080;
+  margin-left:10px;
+  resize:none;
+}
+.contactform textarea{
+  height:100px;
+}
+
+.contactform .cyan_button{
+  
+  border: solid turquoise 1px;
+  color:turquoise;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.6em;
+  padding: 7px;
+  text-transform: uppercase;
+  width:80px;
+  margin-top: 10px;
+}
+
+.clients_area{
+  margin: 10px;
+ 
+}
+
+.clients_content{
+  
+  display:grid;
+  grid-template-columns: 50% 50%;
   /*grid-auto-rows: minmax(1000px, auto);*/
-  grid-template-columns: 150px 150px 150px 150px;
-}
-.client {
-  width: 100px;
-  height: 100px;
-  background-color: white;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  gap: 10px;
+  
+ 
 }
 
-@media only screen and (max-width: 800px) and (orientation: portrait) {
-  .meet_team {
-    background-image: url("images/bgk-header.png"); /* Pfad zu Ihrem Hintergrundbild */
-    background-size: cover;
-    display: flex;
-    color: #ffffff;
-    height: 300px;
+.client{
+  width:80px;
+  height: 15px;
+  /*background-color: green;*/
+  /*margin: 15px;*/
+  padding:15px;
+}
+
+.client img{
+  /*height:15px;*/
+  width: 80px;
+}
+
+
+
+
+@media only screen and (max-width:800px) and (orientation:portrait){
+
+  .contactform .cyan_button{
+  
+    align-self: center;
+    justify-self: center;
+  }
+    .meet_team{
+        background-image: url("images/bg-team.png"); /* Pfad zu Ihrem Hintergrundbild */
+        background-size: cover; 
+        display:flex;
+        color: #ffffff;
+        
+    
+    
+    }
+
+    .teamcontent{
+      display:grid;
+      grid-template-rows: 200px 200px;
+      grid-template-columns: 150px 150px;
+      grid-auto-flow:row;
+      
+      margin-top:0px;
+    
+    }
+
+    .contact_and_clients {
+      
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
+    .clients_area{
+      margin: 10px; 
+      padding-bottom: 70px;
+    }
+
+
+
+
   }
 
-  .teamcontent {
-    display: grid;
-    grid-template-rows: 10vw 10vw;
-    grid-template-columns: 50vw 50vw;
-    grid-auto-flow: column;
-    height: 300px;
-  }
-}
+
+
 
 /* Footer*/
 .footer {
