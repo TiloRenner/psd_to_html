@@ -65,15 +65,17 @@ body {
 /*story section */
 .story-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
-  padding: 45px 65px 45px 45px;
+  padding: 45px 45px 45px 45px;
   position: relative;
-  width: 940px;
+
 }
 .story-logo-image {
   width: 235px;
   height: 229px;
+  padding: 45px 45px 45px 45px;
 }
 
 .story-h2 {
